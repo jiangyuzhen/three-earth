@@ -93,7 +93,7 @@
     function initEarth() {
         var earthGeo = new THREE.SphereGeometry(200, 100, 100);
         var earthMater = new THREE.MeshPhongMaterial({
-            map: new THREE.TextureLoader().load('assets/earth.jpg'),
+            map: new THREE.TextureLoader().load('./assets/earth.jpg'),
             side: THREE.DoubleSide
         });
         earthMesh = new THREE.Mesh(earthGeo, earthMater);
@@ -105,7 +105,7 @@
     function initClouds() {
         var cloudsGeo = new THREE.SphereGeometry(201, 100, 100);
         var cloudsMater = new THREE.MeshPhongMaterial({
-            alphaMap: new THREE.TextureLoader().load('assets/clouds.jpg'),
+            alphaMap: new THREE.TextureLoader().load('./assets/clouds.jpg'),
             transparent: true,
             opacity: 0.2
         });
