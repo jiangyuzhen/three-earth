@@ -73,13 +73,13 @@
 
         // A light source positioned directly above the scene, with color fading from the sky color to the ground color. 
         // 位于场景正上方的光源，颜色从天空颜色渐变为地面颜色。
-        var light = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
-        scene.add(light);
+        //  var light = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
+        // scene.add(light);
 
         // 环境光
-        // light = new THREE.AmbientLight(0xFFFFFF);
-        // light.position.set(100, 100, 200);
-        // scene.add(light);
+        light = new THREE.AmbientLight(0xFFFFFF);
+        light.position.set(100, 100, 200);
+        scene.add(light);
 
         // 平行光
         // 位置不同，方向光作用于物体的面也不同，看到的物体各个面的颜色也不一样
