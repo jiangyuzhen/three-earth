@@ -19,16 +19,24 @@
             height: 100vh;
             background-color: #EEEEEE;
         }
+
+        img {
+            width: 0px;
+            height: 0px;
+            opacity: 0;
+        }
     </style>
 </head>
 
 <body>
+    <img src="./assets/earth.jpg" />
+    <img src="./assets/clouds.jpg" />
     <!-- 存放canvas的容器 -->
     <div id="canvas-frame"></div>
 </body>
 
 <script>
-    
+
     document.addEventListener('DOMContentLoaded', function () {
         threeStart();
     })
