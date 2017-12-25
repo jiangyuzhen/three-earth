@@ -22,12 +22,17 @@
     </style>
 </head>
 
-<body onload="threeStart();">
+<body>
     <!-- 存放canvas的容器 -->
     <div id="canvas-frame"></div>
 </body>
 
 <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        threeStart();
+    })
+
     // 帧蘋
     var stats;
     function initStats() {
